@@ -5,8 +5,8 @@
     {{else}}
       {{ partial "logo.html" . }}
       <div class="copyright">
-        <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>
-        <span>Theme created by <a href="https://twitter.com/panr">panr</a></span>
+        <span> {{ i18n "powered-by"}} <a href="http://gohugo.io">Hugo</a> {{ now.Year }} © </span>
+        <span> {{ i18n "theme-created-by"}} <a href="https://twitter.com/panr">panr</a></span>
       </div>
     {{end}}
   </div>

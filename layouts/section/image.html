@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="posts">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "image") }}
     {{ range $paginator.Pages }}
     <div class="post on-list">
       <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h1>
@@ -10,7 +10,7 @@
         </span>
         <span class="post-author">
           <a href="{{ $.Site.BaseURL }}author">
-            {{ i18n "written-by"}} {{ .Params.Author }}
+            {{ i18n "added-by"}} {{ .Params.Author }}
           </a>
         </span>
       </div>
@@ -23,7 +23,7 @@
         </span>
       {{ end }}
 
-      {{ with .Params.Cover }}
+      {{ with .Params.image }}
         <img src="{{ . }}" class="post-cover" />
       {{ end }}
 

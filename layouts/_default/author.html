@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div class="post">
+    <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+    
+    {{ if .Params.tags }}
+      <span class="post-tags">
+        {{ range .Params.tags }}
+          #<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+        {{ end }}
+      </span>
+    {{ end }}
+
+    {{ with .Params.Cover }}
+      <img src="/img/{{ . }}" class="post-cover" />
+    {{ end }}
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+	
+  </div>
+{{ end }}
