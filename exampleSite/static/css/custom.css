@@ -1,0 +1,17 @@
+body {
+
+}
+.post {
+	direction: rtl;
+	text-align: right;
+	margin: 0px auto;
+	padding: 10px 20px;
+}
+.post-content {
+	text-align: right;
+}
+
+figure figcaption {
+	font-size: 1.2em;
+    font-weight: bold;
+}

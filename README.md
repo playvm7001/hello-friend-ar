@@ -6,7 +6,7 @@
 
 ---
 ## package json
-`
+~~~~
 {
   "name": "arquick",
   "version": "1.0.0",
@@ -23,7 +23,9 @@
   "author": "",
   "license": "ISC"
 }
-`
+~~~~
+
+
 ---
 
 ![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
