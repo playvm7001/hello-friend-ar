@@ -9,7 +9,7 @@
           {{ .Date.Format "2006-01-02" }}
         </span>
         <span class="post-author">
-          <a href="{{ $.Site.BaseURL }}author">
+          <a href="{{ $.Site.BaseURL }}authors/{{ .Params.Author }}/">
             {{ i18n "written-by"}} {{ .Params.Author }}
           </a>
         </span>

@@ -5,28 +5,6 @@
 - This is hello friend for hugo with arabic support
 
 ---
-## package json
-~~~~
-{
-  "name": "arquick",
-  "version": "1.0.0",
-  "description": "- add layout attr to page front matter and to themes layouts",
-  "main": "index.js",
-  "dependencies": {
-    "litecontentsync": "^1.0.9"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": "node ./node_modules/litecontentsync/sync"
-  },
-  "author": "",
-  "license": "ISC"
-}
-~~~~
-
-
----
 
 ![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
 

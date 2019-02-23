@@ -18,3 +18,12 @@ other = "نفخر باستخدام"
 
 [theme-created-by]
 other = "تم تطوير القالب بواسطة"
+
+[newer-posts]
+other = "موضوعات أحدث"
+
+[older-posts]
+other = "موضوعات أقدم"
+
+[last-modified]
+other = "تم التحديث في"

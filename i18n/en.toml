@@ -18,3 +18,13 @@ other = "Powered by"
 
 [theme-created-by]
 other = "Theme created by"
+
+
+[newer-posts]
+other = "Newer Posts"
+
+[older-posts]
+other = "Older Posts"
+
+[last-modified]
+other = "Last modified"

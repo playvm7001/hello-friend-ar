@@ -1,5 +1,12 @@
 {{ define "main" }}
-  <div class="posts">
+{{ if .Params.title }}
+<h1 class="img-page-title">{{ .Params.title }}</h1>
+{{ end }}
+
+{{ if .Params.description }}
+<p class="img-page-description">{{ .Params.description }}</p>
+{{ end }}
+  <div class="posts image-post">
     {{ $paginator := .Paginate (where .Data.Pages "Type" "image") }}
     {{ range $paginator.Pages }}
     <div class="post on-list">
@@ -9,7 +16,7 @@
           {{ .Date.Format "2006-01-02" }}
         </span>
         <span class="post-author">
-          <a href="{{ $.Site.BaseURL }}author">
+          <a href="{{ $.Site.BaseURL }}authors/{{ .Params.Author }}/">
             {{ i18n "added-by"}} {{ .Params.Author }}
           </a>
         </span>
